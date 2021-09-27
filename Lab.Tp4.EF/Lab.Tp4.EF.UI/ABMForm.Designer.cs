@@ -29,7 +29,7 @@ namespace Lab.Tp4.EF.UI
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnGetTerritories = new System.Windows.Forms.Button();
             this.dgDatos = new System.Windows.Forms.DataGridView();
             this.btnGetShippers = new System.Windows.Forms.Button();
@@ -56,6 +56,7 @@ namespace Lab.Tp4.EF.UI
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.btnDeleteShipper = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgDatos)).BeginInit();
             this.gbDatosShipper.SuspendLayout();
             this.SuspendLayout();
@@ -85,14 +86,14 @@ namespace Lab.Tp4.EF.UI
             this.dgDatos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgDatos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgDatos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgDatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgDatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgDatos.Location = new System.Drawing.Point(344, 12);
             this.dgDatos.MultiSelect = false;
@@ -160,7 +161,7 @@ namespace Lab.Tp4.EF.UI
             // 
             this.btnAddShipper.AllowDrop = true;
             this.btnAddShipper.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnAddShipper.Location = new System.Drawing.Point(53, 203);
+            this.btnAddShipper.Location = new System.Drawing.Point(53, 192);
             this.btnAddShipper.Name = "btnAddShipper";
             this.btnAddShipper.Size = new System.Drawing.Size(178, 43);
             this.btnAddShipper.TabIndex = 13;
@@ -172,7 +173,7 @@ namespace Lab.Tp4.EF.UI
             // 
             this.btnUpdateShipper.AllowDrop = true;
             this.btnUpdateShipper.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnUpdateShipper.Location = new System.Drawing.Point(53, 261);
+            this.btnUpdateShipper.Location = new System.Drawing.Point(53, 241);
             this.btnUpdateShipper.Name = "btnUpdateShipper";
             this.btnUpdateShipper.Size = new System.Drawing.Size(178, 43);
             this.btnUpdateShipper.TabIndex = 14;
@@ -182,6 +183,7 @@ namespace Lab.Tp4.EF.UI
             // 
             // gbDatosShipper
             // 
+            this.gbDatosShipper.Controls.Add(this.btnDeleteShipper);
             this.gbDatosShipper.Controls.Add(this.txtCompanyName);
             this.gbDatosShipper.Controls.Add(this.txtPhone);
             this.gbDatosShipper.Controls.Add(this.lblCompanyName);
@@ -191,7 +193,7 @@ namespace Lab.Tp4.EF.UI
             this.gbDatosShipper.Enabled = false;
             this.gbDatosShipper.Location = new System.Drawing.Point(22, 193);
             this.gbDatosShipper.Name = "gbDatosShipper";
-            this.gbDatosShipper.Size = new System.Drawing.Size(283, 322);
+            this.gbDatosShipper.Size = new System.Drawing.Size(283, 364);
             this.gbDatosShipper.TabIndex = 15;
             this.gbDatosShipper.TabStop = false;
             // 
@@ -349,6 +351,18 @@ namespace Lab.Tp4.EF.UI
             this.label12.TabIndex = 29;
             this.label12.Text = "eliminar y luego presionar";
             // 
+            // btnDeleteShipper
+            // 
+            this.btnDeleteShipper.AllowDrop = true;
+            this.btnDeleteShipper.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnDeleteShipper.Location = new System.Drawing.Point(53, 290);
+            this.btnDeleteShipper.Name = "btnDeleteShipper";
+            this.btnDeleteShipper.Size = new System.Drawing.Size(178, 43);
+            this.btnDeleteShipper.TabIndex = 15;
+            this.btnDeleteShipper.Text = "Delete Shipper";
+            this.btnDeleteShipper.UseVisualStyleBackColor = true;
+            this.btnDeleteShipper.Click += new System.EventHandler(this.btnDeleteShipper_Click);
+            // 
             // ABMForm
             // 
             this.ClientSize = new System.Drawing.Size(1415, 658);
@@ -411,6 +425,7 @@ namespace Lab.Tp4.EF.UI
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btnDeleteShipper;
     }
 }
 

@@ -22,7 +22,9 @@ namespace Lab.Tp4.EF.Logic
         
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            var entity = context.Shippers.First(i => i.ShipperID == id);
+            context.Shippers.Remove(entity);
+            context.SaveChanges();
         }
 
         public void Update(Shipper shipper)

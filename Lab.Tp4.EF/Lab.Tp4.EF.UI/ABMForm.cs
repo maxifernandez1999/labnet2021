@@ -272,6 +272,21 @@ namespace Lab.Tp4.EF.UI
             
         }
 
-      
+        private void btnDeleteShipper_Click(object sender, EventArgs e)
+        {
+            ShipperLogic shipper = new ShipperLogic();
+            var id = this.dgDatos.CurrentRow.Cells[0].Value;
+            try
+            {
+                shipper.Delete(Convert.ToInt32(id));
+                MessageBox.Show("Eliminacion realizado con exito realizado con exito!");
+                this.ClearDataTable();
+                this.ShowShippers();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("El elemento no pudo ser borrado! Contiene relaciones con otras tablas");
+            }
+}
     }
 }
