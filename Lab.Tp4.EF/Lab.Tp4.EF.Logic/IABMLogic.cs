@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab.Tp4.EF.Logic
+namespace Lab.Tp7.Logic
 {
     public interface IABMLogic<T>
     {

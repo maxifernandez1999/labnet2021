@@ -1,5 +1,5 @@
 ﻿
-namespace Lab.Tp4.EF.UI
+namespace Lab.Tp7.UI
 {
     partial class ABMForm
     {
@@ -41,6 +41,7 @@ namespace Lab.Tp4.EF.UI
             this.btnAddShipper = new System.Windows.Forms.Button();
             this.btnUpdateShipper = new System.Windows.Forms.Button();
             this.gbDatosShipper = new System.Windows.Forms.GroupBox();
+            this.btnDeleteShipper = new System.Windows.Forms.Button();
             this.lblAdd = new System.Windows.Forms.Label();
             this.btnShowTerritoryEmployee = new System.Windows.Forms.Button();
             this.btnDeleteTerritoryEmployee = new System.Windows.Forms.Button();
@@ -56,7 +57,6 @@ namespace Lab.Tp4.EF.UI
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.btnDeleteShipper = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgDatos)).BeginInit();
             this.gbDatosShipper.SuspendLayout();
             this.SuspendLayout();
@@ -196,6 +196,18 @@ namespace Lab.Tp4.EF.UI
             this.gbDatosShipper.Size = new System.Drawing.Size(283, 364);
             this.gbDatosShipper.TabIndex = 15;
             this.gbDatosShipper.TabStop = false;
+            // 
+            // btnDeleteShipper
+            // 
+            this.btnDeleteShipper.AllowDrop = true;
+            this.btnDeleteShipper.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnDeleteShipper.Location = new System.Drawing.Point(53, 290);
+            this.btnDeleteShipper.Name = "btnDeleteShipper";
+            this.btnDeleteShipper.Size = new System.Drawing.Size(178, 43);
+            this.btnDeleteShipper.TabIndex = 15;
+            this.btnDeleteShipper.Text = "Delete Shipper";
+            this.btnDeleteShipper.UseVisualStyleBackColor = true;
+            this.btnDeleteShipper.Click += new System.EventHandler(this.btnDeleteShipper_Click);
             // 
             // lblAdd
             // 
@@ -351,18 +363,6 @@ namespace Lab.Tp4.EF.UI
             this.label12.TabIndex = 29;
             this.label12.Text = "eliminar y luego presionar";
             // 
-            // btnDeleteShipper
-            // 
-            this.btnDeleteShipper.AllowDrop = true;
-            this.btnDeleteShipper.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnDeleteShipper.Location = new System.Drawing.Point(53, 290);
-            this.btnDeleteShipper.Name = "btnDeleteShipper";
-            this.btnDeleteShipper.Size = new System.Drawing.Size(178, 43);
-            this.btnDeleteShipper.TabIndex = 15;
-            this.btnDeleteShipper.Text = "Delete Shipper";
-            this.btnDeleteShipper.UseVisualStyleBackColor = true;
-            this.btnDeleteShipper.Click += new System.EventHandler(this.btnDeleteShipper_Click);
-            // 
             // ABMForm
             // 
             this.ClientSize = new System.Drawing.Size(1415, 658);
@@ -398,7 +398,6 @@ namespace Lab.Tp4.EF.UI
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnGetTerritories;
         private System.Windows.Forms.DataGridView dgDatos;
         private System.Windows.Forms.Button btnGetShippers;

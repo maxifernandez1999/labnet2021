@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lab.Tp4.EF.UI
+namespace Lab.Tp7.UI
 {
     static class Program
     {

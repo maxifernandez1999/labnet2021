@@ -1,6 +1,6 @@
-﻿using Lab.Tp4.EF.Entities;
-using Lab.Tp4.EF.Logic;
-using Lab.Tp4.EF.Logic.Extensions;
+﻿using Lab.tp7.EF.Logic.Extensions;
+using Lab.Tp7.Entities;
+using Lab.Tp7.Logic;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lab.Tp4.EF.UI
+namespace Lab.Tp7.UI
 {
     public partial class ABMForm : Form
     {
@@ -288,5 +288,6 @@ namespace Lab.Tp4.EF.UI
                 MessageBox.Show("El elemento no pudo ser borrado! Contiene relaciones con otras tablas");
             }
 }
+
     }
 }

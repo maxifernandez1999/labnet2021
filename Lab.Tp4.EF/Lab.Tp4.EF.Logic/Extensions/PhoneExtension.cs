@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab.Tp4.EF.Logic.Extensions
+namespace Lab.tp7.EF.Logic.Extensions
 {
     public static class PhoneExtension
     {

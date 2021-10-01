@@ -57,6 +57,9 @@
     <Reference Include="Moq, Version=4.16.0.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <HintPath>..\packages\Moq.4.16.1\lib\net45\Moq.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -77,17 +80,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lab.Tp4.EF.Entities\Lab.Tp4.EF.Entities.csproj">
+    <ProjectReference Include="..\Lab.Tp4.EF.Entities\Lab.Tp7.Entities.csproj">
       <Project>{29662225-6D88-4AD4-A7B8-25B2F0E49531}</Project>
-      <Name>Lab.Tp4.EF.Entities</Name>
+      <Name>Lab.Tp7.Entities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Lab.Tp4.EF.Logic\Lab.Tp4.EF.Logic.csproj">
+    <ProjectReference Include="..\Lab.Tp4.EF.Logic\Lab.Tp7.Logic.csproj">
       <Project>{0116FC1B-CC34-4DF4-BDE2-252D2F3125F0}</Project>
-      <Name>Lab.Tp4.EF.Logic</Name>
+      <Name>Lab.Tp7.Logic</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Lab.Tp4.EF.UI\Lab.Tp4.EF.UI.csproj">
+    <ProjectReference Include="..\Lab.Tp4.EF.UI\Lab.Tp7.UI.csproj">
       <Project>{35021d82-11f7-40e1-9fe6-155177961dd8}</Project>
-      <Name>Lab.Tp4.EF.UI</Name>
+      <Name>Lab.Tp7.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

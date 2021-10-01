@@ -1,17 +1,26 @@
-﻿using Lab.Tp4.EF.Entities;
+﻿using Lab.Tp7.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab.Tp4.EF.Logic
+namespace Lab.Tp7.Logic
 {
     public class CategoryLogic : BaseLogic, IABMLogic<Category>
     {
         public List<Category> GetAll()
         {
-            return context.Categories.ToList();
+            try
+            {
+                return context.Categories.ToList();
+            }
+            catch (Exception)
+            {
+
+                throw new Exception();
+            }
+            
         }
 
         public void Add(Category category)

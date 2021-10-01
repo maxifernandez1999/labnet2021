@@ -1,0 +1,104 @@
+﻿@model List<Lab.Tp7.MVC.Models.ShipperView>
+@{
+    ViewBag.Title = "Shipper";
+}
+
+<div class="row">
+    <div class="col-lg-8" style="background-color:white">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">CompanyName</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var shipper in Model)
+                {
+                    <tr>
+                        <th scope="row">@shipper.ID</th>
+                        <td>@shipper.CompanyName</td>
+                        <td>@shipper.Phone</td>
+                        <td>
+                            <button type="button"
+                                    data-action="modificar" 
+                                    class="btn btn-primary" 
+                                    data-obj="@shipper.ID" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#exampleModal"
+                                    >
+                                Update
+                            </button>
+                            <button type="button"
+                                    data-action="eliminar"
+                                    class="btn btn-danger"
+                                    data-obj-delete="@shipper.ID"
+                                    >
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-lg-4">
+        <div class="col-lg-12">
+            <br />
+
+            <div class="input-group">
+                <input type="text" id="addCompanyName" class="form-control" placeholder="Company Name" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2">CompanyMaster</span>
+                </div>
+            </div>
+            <br />
+            <div class="input-group">
+                <input type="text" id="addPhone" class="form-control" placeholder="Phone" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2">(555) 454-3456</span>
+                </div>
+            </div>
+            <br />
+            <button id="btnAdd" class="btn btn-info">Add</button>
+            <br />
+            <br />
+            <h2 id="messageAdd">Complete fields</h2>
+        </div>
+        <div class="divResultado"></div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group">
+                    <input type="text" id="btnUpdateCompanyName" class="form-control" placeholder="Company Name" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">CompanyMaster</span>
+                    </div>
+                </div>
+                <br />
+                <div class="input-group">
+                    <input type="text" class="form-control" id="btnUpdatePhone" placeholder="Phone" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">(555) 454-3456</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" id="saveChanges" data-bs-dismiss="modal" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>

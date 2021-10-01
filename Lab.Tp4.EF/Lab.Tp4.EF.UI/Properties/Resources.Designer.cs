@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace Lab.Tp4.EF.UI.Properties
+namespace Lab.tp7.EF.UI.Properties
 {
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.

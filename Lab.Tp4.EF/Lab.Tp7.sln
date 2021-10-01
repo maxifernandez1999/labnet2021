@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Tp4.EF.UI", "Lab.Tp4.EF.UI\Lab.Tp4.EF.UI.csproj", "{35021D82-11F7-40E1-9FE6-155177961DD8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Tp7.UI", "Lab.Tp4.EF.UI\Lab.Tp7.UI.csproj", "{35021D82-11F7-40E1-9FE6-155177961DD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Tp4.EF.Data", "Lab.Tp4.EF.Data\Lab.Tp4.EF.Data.csproj", "{37EEE717-06B3-4783-AE80-87536B27AF61}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Tp7.Data", "Lab.Tp4.EF.Data\Lab.Tp7.Data.csproj", "{37EEE717-06B3-4783-AE80-87536B27AF61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Tp4.EF.Entities", "Lab.Tp4.EF.Entities\Lab.Tp4.EF.Entities.csproj", "{29662225-6D88-4AD4-A7B8-25B2F0E49531}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Tp7.Entities", "Lab.Tp4.EF.Entities\Lab.Tp7.Entities.csproj", "{29662225-6D88-4AD4-A7B8-25B2F0E49531}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Tp4.EF.Logic", "Lab.Tp4.EF.Logic\Lab.Tp4.EF.Logic.csproj", "{0116FC1B-CC34-4DF4-BDE2-252D2F3125F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Tp7.Logic", "Lab.Tp4.EF.Logic\Lab.Tp7.Logic.csproj", "{0116FC1B-CC34-4DF4-BDE2-252D2F3125F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Tp4.EF.Test", "Test\Lab.Tp4.EF.Test.csproj", "{F8F53945-6ACE-453E-864A-99EAA152EFFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Tp7.Test", "Test\Lab.Tp7.Test.csproj", "{F8F53945-6ACE-453E-864A-99EAA152EFFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Tp7.MVC", "Lab.Tp7.MVC\Lab.Tp7.MVC.csproj", "{575D7673-C5F4-4396-9462-39B297C1C051}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{F8F53945-6ACE-453E-864A-99EAA152EFFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8F53945-6ACE-453E-864A-99EAA152EFFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8F53945-6ACE-453E-864A-99EAA152EFFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{575D7673-C5F4-4396-9462-39B297C1C051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{575D7673-C5F4-4396-9462-39B297C1C051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{575D7673-C5F4-4396-9462-39B297C1C051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{575D7673-C5F4-4396-9462-39B297C1C051}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

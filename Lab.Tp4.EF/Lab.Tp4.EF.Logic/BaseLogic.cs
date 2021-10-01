@@ -1,11 +1,11 @@
-﻿using Lab.Tp4.EF.Data;
+﻿using Lab.Tp7.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab.Tp4.EF.Logic
+namespace Lab.Tp7.Logic
 {
     public class BaseLogic
     {

@@ -1,13 +1,13 @@
-﻿using Lab.Tp4.EF.Entities;
-using Lab.Tp4.EF.Logic;
-using Lab.Tp4.EF.Logic.Extensions;
-using Lab.Tp4.EF.UI;
+﻿using Lab.tp7.EF.Logic.Extensions;
+using Lab.Tp7.Entities;
+using Lab.Tp7.Logic;
+using Lab.Tp7.UI;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using System;
 using System.Collections.Generic;
 
-namespace Lab.Tp4.EF.Test
+namespace Lab.tp7.Test
 {
     [TestClass]
     public class EFTest
@@ -22,6 +22,8 @@ namespace Lab.Tp4.EF.Test
                 Phone = "(555) 345-3453"
 
             });
+
+            Assert.IsInstanceOfType(shipperLogic, typeof(ShipperLogic));
            
                 
         }
@@ -32,11 +34,12 @@ namespace Lab.Tp4.EF.Test
             ShipperLogic shipperLogic = new ShipperLogic();
             shipperLogic.Update(new Shipper
             {
-                ShipperID = 15,
+                ShipperID = 1,
                 CompanyName = "NewCompanyMaster2",
                 Phone = "(555) 345-3455"
 
             });
+            Assert.IsInstanceOfType(shipperLogic, typeof(ShipperLogic));
 
 
         }

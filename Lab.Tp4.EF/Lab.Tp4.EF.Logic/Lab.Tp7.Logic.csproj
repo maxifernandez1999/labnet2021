@@ -43,6 +43,9 @@
     <Reference Include="Moq, Version=4.16.0.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <HintPath>..\packages\Moq.4.16.1\lib\net45\Moq.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -75,13 +78,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lab.Tp4.EF.Data\Lab.Tp4.EF.Data.csproj">
+    <ProjectReference Include="..\Lab.Tp4.EF.Data\Lab.Tp7.Data.csproj">
       <Project>{37EEE717-06B3-4783-AE80-87536B27AF61}</Project>
-      <Name>Lab.Tp4.EF.Data</Name>
+      <Name>Lab.Tp7.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Lab.Tp4.EF.Entities\Lab.Tp4.EF.Entities.csproj">
+    <ProjectReference Include="..\Lab.Tp4.EF.Entities\Lab.Tp7.Entities.csproj">
       <Project>{29662225-6D88-4AD4-A7B8-25B2F0E49531}</Project>
-      <Name>Lab.Tp4.EF.Entities</Name>
+      <Name>Lab.Tp7.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
