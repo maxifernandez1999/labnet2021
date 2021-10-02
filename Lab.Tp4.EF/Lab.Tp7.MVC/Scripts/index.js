@@ -90,8 +90,12 @@
                     ShipperID: parseInt(value, 10)
                 },
                 statusCode: {
-                    200: function () {
-                        alert("Deleted!!!");
+                    200: function (resultado) {
+                        if (resultado == 200) {
+                            alert("Deleted!!!");
+                        } else {
+                            alert("Ocurrio un error al eliminar!");
+                        } 
                     },
                     404: function () {
                         alert("Error!!!");

@@ -73,7 +73,7 @@ namespace Lab.Tp7.MVC.Controllers
         }
 
         
-        public JsonResult Delete(Shipper shipper)
+        public int Delete(Shipper shipper)
         { 
             try
             {
@@ -81,9 +81,9 @@ namespace Lab.Tp7.MVC.Controllers
             }
             catch (Exception)
             {
-                return Json("{'error':404}");
+                return 404;
             }
-            return Json("{'ok':200}");
+            return 200;
         }
 
 
