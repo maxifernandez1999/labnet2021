@@ -9,6 +9,7 @@ namespace Lab.Tp7.Logic
 {
     public class ShipperLogic : BaseLogic, IABMLogic<Shipper>
     {
+
         public List<Shipper> GetAll()
         {
             try
@@ -50,6 +51,18 @@ namespace Lab.Tp7.Logic
                 throw new Exception();
             }
         }
+        public Shipper GetOne(int id)
+        {
+            try
+            {
+                return context.Shippers.First(i => i.ShipperID == id);
+            }
+            catch (Exception)
+            {
+                throw new Exception();
+            }
+        }
+
 
         public void Update(Shipper shipper)
         {

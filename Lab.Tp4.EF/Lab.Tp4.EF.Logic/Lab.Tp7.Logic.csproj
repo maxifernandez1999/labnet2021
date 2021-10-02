@@ -68,6 +68,7 @@
     <Compile Include="EmployeeTerritoryLogic.cs" />
     <Compile Include="CategoryLogic.cs" />
     <Compile Include="Extensions\PhoneExtension.cs" />
+    <Compile Include="FoodishLogic.cs" />
     <Compile Include="IABMLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShipperLogic.cs" />

@@ -58,22 +58,27 @@
     </style>
 </head>
 <body class="d-flex h-100 text-center text-white bg-dark">
+    <div>
+        <button class="btn btn-danger">@Html.ActionLink("Foodish", "Index", "Foodish")</button>
+    </div>
     <div class="container-fluid d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="mb-auto">
             <div>
                 <h3 class="float-md-start mb-0">ABMC Maximiliano Fernandez</h3>
             </div>
+
         </header>
+
         <div class="container body-content">
             @RenderBody()
         </div>
         @*<main class="px-3">
-            <h1>Cover your page.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-            <p class="lead">
-                <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
-            </p>
-        </main>*@
+                <h1>Cover your page.</h1>
+                <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+                <p class="lead">
+                    <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+                </p>
+            </main>*@
     </div>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

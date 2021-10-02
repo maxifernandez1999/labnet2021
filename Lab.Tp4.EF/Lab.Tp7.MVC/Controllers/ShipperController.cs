@@ -19,10 +19,10 @@ namespace Lab.Tp7.MVC.Controllers
         {
             List<Shipper> listShipper = shipperLogic.GetAll();
 
-            List<ShipperView> shipperView = new List<ShipperView>();
+            List<ShipperViewModel> shipperView = new List<ShipperViewModel>();
             try
             {
-                shipperView = listShipper.Select(s => new ShipperView
+                shipperView = listShipper.Select(s => new ShipperViewModel
                 {
                     ID = s.ShipperID,
                     CompanyName = s.CompanyName,

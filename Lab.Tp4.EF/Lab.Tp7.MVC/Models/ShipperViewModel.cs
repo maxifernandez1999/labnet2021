@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Lab.Tp7.MVC.Models
 {
-    public class ShipperView
+    public class ShipperViewModel
     {
         public int ID { get; set; } 
         public string CompanyName { get; set; }

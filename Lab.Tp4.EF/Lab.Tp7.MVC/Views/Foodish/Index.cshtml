@@ -1,0 +1,20 @@
+﻿@model Lab.Tp7.MVC.Models.FoodishViewModel
+@{
+    ViewBag.Title = "Foodish";
+}
+
+<div style="background-color:white">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Image</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <th scope="row"><img src="@Model.Image" width="1000" height="1000"/></th>
+                </tr>
+        </tbody>
+    </table>
+</div>
+
