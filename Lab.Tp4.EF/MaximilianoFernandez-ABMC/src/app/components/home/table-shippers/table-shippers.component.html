@@ -1,0 +1,30 @@
+<div class="card">
+	<div class="card-header">
+	    List of SHIPPERS
+	</div>
+	<div class="p-4">
+	    <table class="table align-middle">
+		  <thead>
+			<tr>
+			    <th scope="col">ID</th>
+			    <th scope="col">CompanyName</th>
+			    <th scope="col">Phone</th>
+			    <th scope="col" colspan="2">Actions</th>
+			</tr>
+		  </thead>
+		  <tbody *ngFor="let shipper of listShipers">
+			<tr>
+				
+				<td>{{shipper.ShipperID}}</td>
+				<td>{{shipper.CompanyName}}</td>
+				<td>{{shipper.Phone}}</td>
+				<td>
+					<a href="" (click)="sendDataToServiceUpdate(shipper)" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+					<a href="#deleteModal" class="delete" (click)="sendDataToServiceDelete(shipper)"data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+				</td>
+			</tr>
+		</tbody>
+	    </table>
+	    
+	</div>
+  </div>
