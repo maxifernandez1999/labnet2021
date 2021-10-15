@@ -1,8 +1,11 @@
-import { typeWithParameters } from '@angular/compiler/src/render3/util';
 import { AfterViewInit, Component, ElementRef, Input, OnDestroy, OnInit, Renderer2, ViewChild } from '@angular/core';
+
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
+
 import { Subscription } from 'rxjs';
+
 import { Shipper } from 'src/app/models/shipper';
+
 import { ShippersService } from 'src/app/services/shippers.service';
 
 @Component({
@@ -85,11 +88,11 @@ export class RegisterComponent implements OnInit, AfterViewInit, OnDestroy {
   generateCancelButton():any{
     const element = this.buttons.nativeElement;
     const input = this.renderer2.createElement('input');
-    this.renderer2.setAttribute(input,"type","button")
-    this.renderer2.setAttribute(input,"value","Cancel")
-    this.renderer2.addClass(input,"btn")
-    this.renderer2.addClass(input,"btn-danger")
-    this.renderer2.addClass(input,"m-1")
+    this.renderer2.setAttribute(input,"type","button");
+    this.renderer2.setAttribute(input,"value","Cancel");
+    this.renderer2.addClass(input,"btn");
+    this.renderer2.addClass(input,"btn-danger");
+    this.renderer2.addClass(input,"m-1");
     this.renderer2.appendChild(element,input);
     this.renderer2.listen(input,'click',() => {
       window.location.reload();

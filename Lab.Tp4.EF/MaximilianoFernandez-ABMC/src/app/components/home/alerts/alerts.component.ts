@@ -36,10 +36,10 @@ export class AlertsComponent implements OnInit, OnDestroy, AfterViewInit {
 
   getInfoAlertDelete():void{
     this.subscribeDeleteAlert = this.shipperService.communicatorAlertDelete$.subscribe(res => {
-      if(res == "deleted"){
+      if(res === "deleted"){
         const element = this.alertDelete.nativeElement;
         this.renderer2.addClass(element,"show");
-      }else if(res == "error"){
+      }else if(res === "error"){
         const element = this.alertError.nativeElement;
         this.renderer2.addClass(element,"show");
       }
@@ -48,10 +48,10 @@ export class AlertsComponent implements OnInit, OnDestroy, AfterViewInit {
 
   getInfoAlertAdd():void{
     this.subscribeAddAlert = this.shipperService.communicatorAlertAdd$.subscribe(res => {
-      if(res == "added"){
+      if(res === "added"){
         const element = this.alertAdd.nativeElement;
         this.renderer2.addClass(element,"show");
-      }else if(res == "error"){
+      }else if(res === "error"){
         const element = this.alertError.nativeElement;
         this.renderer2.addClass(element,"show");
       }
@@ -60,10 +60,10 @@ export class AlertsComponent implements OnInit, OnDestroy, AfterViewInit {
 
   getInfoAlertUpdate():void{
     this.subscribeUpdateAlert = this.shipperService.communicatorAlertUpdate$.subscribe(res => {
-      if(res == "updated"){
+      if(res === "updated"){
         const element = this.alertUpdate.nativeElement;
         this.renderer2.addClass(element,"show");
-      }else if(res == "error"){
+      }else if(res === "error"){
         const element = this.alertError.nativeElement;
         this.renderer2.addClass(element,"show");
       }
